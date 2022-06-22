@@ -217,3 +217,54 @@ print(mix_list)
 # 리스트 확장
 num_list.extend(mix_list)
 print(num_list)
+
+# Dictionary
+cabinet = {3: "JaeSeok", 100: "TaeHo"}
+print(cabinet[3])
+print(cabinet[100])
+print(cabinet.get(3))
+# print(cabinet[5]) #[]로 했을 때, 값이 없으면 함수 종료
+print(cabinet.get(5))  # get으로 하면, 함수종료(X), None이라고 뜸
+print(cabinet.get(6), "OK!!")  # 6번에 자료가 없으면, "OK!!"를 준다
+
+print(3 in cabinet)  # True 값이 자료에 있는지 확인
+print(5 in cabinet)  # False
+
+cabinet = {"A-3": "JaeSeok", "B-100": "TaeHo"}
+print(cabinet["A-3"])
+print(cabinet["B-100"])
+# New Customer
+print(cabinet)
+cabinet["A-3"] = "JongKuk"  # 값 변경
+cabinet["C-20"] = "SeHo"  # 값 추가
+print(cabinet)
+# Bye Customer
+del cabinet["A-3"]
+print(cabinet)
+
+# Print Only Key
+print(cabinet.keys())
+
+# Print Only Value
+print(cabinet.values())
+
+# Print Key, Value
+print(cabinet.items())
+
+# Closed Document
+cabinet.clear()
+print(cabinet)
+
+# 튜플 / 값 추가 및 변경이 안된다. 무조건 고정된 값
+menu = ("Pork", "Beef")
+print(menu[0])
+print(menu[1])
+# menu.add("Fish")
+
+name = ("JongKuK")
+age = 20
+hobby = "Coding"
+print(name, age, hobby)
+
+(name, age, hobby) = ("JaeSeok", 30, "Cook")
+print(name, age, hobby)

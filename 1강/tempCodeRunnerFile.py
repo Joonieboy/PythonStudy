@@ -1,3 +1,8 @@
-# 모두 지우기
-# num_list.clear()
-# print(num_list)
+shuffle(comment, 4)
+# winners = sample(comment, 4)
+# print("-- 당첨자 발표 --")
+# # print("치킨 당첨자 : ", sample(comment, 1))
+# # print("커피 당첨자 : ", sample(comment, 3))
+# print("치킨 당첨자 : {0}".format(winners[0]))
+# print("커피 당첨자 : {0}".format(winners[1:]))
+# print("-- 축하합니다 --")
